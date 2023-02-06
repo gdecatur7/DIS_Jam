@@ -11,8 +11,7 @@ public class SnowmanSpawn : MonoBehaviour
     private float timeMax = 5;
     private float distanceMin = 2;
     private float distanceMax = 5;
-    public Sprite[] snowManAnimation;
-    public SpriteRenderer sp;
+    
     void Start()
     {
     }

@@ -7,6 +7,8 @@ public class Snowman : MonoBehaviour
     private double animTimer = 0.5;
     private double animCounterTimer = 0;
     private int index = 0;
+    public Sprite[] snowManAnimation;
+    public SpriteRenderer sp;
 
     // Start is called before the first frame update
     void Start()

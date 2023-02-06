@@ -2040,7 +2040,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8825357146104441977, guid: edbcf425e6c464b3c8d633a28873b366, type: 3}
       propertyPath: m_Mass
-      value: 0.30965
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8825357146104441977, guid: edbcf425e6c464b3c8d633a28873b366, type: 3}
       propertyPath: m_BodyType
@@ -2056,11 +2056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8825357146104441977, guid: edbcf425e6c464b3c8d633a28873b366, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8825357146104441977, guid: edbcf425e6c464b3c8d633a28873b366, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1185729585992143986, guid: edbcf425e6c464b3c8d633a28873b366, type: 3}
       propertyPath: m_RootOrder

@@ -30,8 +30,10 @@ public class Shatter : MonoBehaviour
             currentFrameIndex++;
             if (currentFrameIndex >= frames.Length)
             {
+                var spawnPos = transform.position;
+                spawnPos.x += 3;
                 Destroy(gameObject);
-                Instantiate(item, transform.position, Quaternion.identity);
+                Instantiate(item, spawnPos, Quaternion.identity);
                 return;
             }
             frameTimer = (1f / framesPerSecond);

@@ -158,5 +158,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd82cf8629b8545a88b4ad8fe27d0c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 1
+  walkingSpeed: 2
   shatterPrefab: {fileID: 2217820860764168096, guid: 67e0a4df2baf14976be36a46e8d30b38, type: 3}

@@ -7,7 +7,7 @@ public class PenguinController : MonoBehaviour
     public float walkingSpeed = 1;
     public GameObject shatterPrefab;
     private float jumpingSpeed = 3;
-    private float animationFPS = 5;
+    //private float animationFPS = 5;
     Rigidbody2D rb2D;
 
     void Start()
@@ -37,9 +37,14 @@ public class PenguinController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("block"))
         {
-            Instantiate(shatterPrefab, transform.position, transform.rotation);
-            Destroy(gameObject); // destroy the block
+            Instantiate(shatterPrefab, col.gameObject.transform.position, Quaternion.identity);
+            Destroy(col.gameObject);
 
+        }
+
+        if (col.gameObject.CompareTag("item"))
+        {
+            Destroy(col.gameObject);
         }
     }
 }

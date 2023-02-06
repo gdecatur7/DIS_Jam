@@ -5,6 +5,7 @@ using UnityEngine;
 public class PenguinController : MonoBehaviour
 {
     public float walkingSpeed = 1;
+    public GameObject shatterPrefab;
     private float jumpingSpeed = 3;
     private float animationFPS = 5;
     Rigidbody2D rb2D;
@@ -30,5 +31,15 @@ public class PenguinController : MonoBehaviour
         rb2D.velocity = new Vector2(movement.x, movement.y);
         transform.right = rb2D.velocity.normalized;
 
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("block"))
+        {
+            Instantiate(shatterPrefab, transform.position, transform.rotation);
+            Destroy(gameObject); // destroy the block
+
+        }
     }
 }

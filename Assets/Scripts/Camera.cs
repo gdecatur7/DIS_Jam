@@ -14,4 +14,5 @@ public class CameraController : MonoBehaviour
         pos.x = player.position.x + offsetX;
         transform.position = pos;
     }
+    
 }

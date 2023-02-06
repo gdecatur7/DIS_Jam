@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PenguinController : MonoBehaviour
 {
@@ -45,6 +46,11 @@ public class PenguinController : MonoBehaviour
         if (col.gameObject.CompareTag("item"))
         {
             Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

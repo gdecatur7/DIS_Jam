@@ -99,8 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObsSnowman: {fileID: 0}
-  snowManAnimation: []
-  sp: {fileID: 0}
 --- !u!60 &-7454366159051232634
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class PenguinController : MonoBehaviour
 {
-    public float speed;
-    //Rigidbody2D rb2D;
+    public float walkingSpeed = 1;
+    private float jumpingSpeed = 1;
+    private float animationFPS = 5;
+    Rigidbody2D rb2D;
+    private float movementVertical;
+    private float movementHorizontal;
 
     void Start()
     {
-        //rb2D = GetComponent<Rigidbody2D>();
+        movementVertical = 0;
+        movementHorizontal = walkingSpeed;
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float movementVertical = 0;
-        if (Input.GetKey(KeyCode.Space)) { movementVertical = speed; }
+        
+
+        rb2D.velocity = new Vector2(movementHorizontal, movementVertical);
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            movementVertical = jumpingSpeed;
+        }
 
     }
 }

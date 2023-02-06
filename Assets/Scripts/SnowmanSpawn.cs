@@ -7,8 +7,8 @@ public class SnowmanSpawn : MonoBehaviour
     public GameObject ObsSnowman;
     private float timer = 0;
     private float spawnTimer = 5;
-    private float timeMin = 0;
-    private float timeMax = 5;
+    private float timeMin = 3;
+    private float timeMax = 7;
     private float distanceMin = 2;
     private float distanceMax = 5;
     

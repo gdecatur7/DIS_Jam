@@ -48,7 +48,7 @@ public class PenguinController : MonoBehaviour
             Destroy(col.gameObject);
         }
 
-        if (col.gameObject.CompareTag("Enemy"))
+        if (col.gameObject.CompareTag("enemy"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

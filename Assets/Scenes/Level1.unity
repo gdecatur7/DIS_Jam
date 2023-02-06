@@ -444,8 +444,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d556caac6a49400eb5a280870f385f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   player: {fileID: 974051201}
   offsetX: 2
+=======
+  player: {fileID: 0}
+  offsetX: 0
+>>>>>>> Stashed changes
 --- !u!1 &516753542
 GameObject:
   m_ObjectHideFlags: 0

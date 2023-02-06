@@ -48,9 +48,13 @@ public class PenguinController : MonoBehaviour
             Destroy(col.gameObject);
         }
 
+<<<<<<< Updated upstream
         if (col.gameObject.CompareTag("enemy"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+=======
+        // if "enemy" dying seq + restart
+>>>>>>> Stashed changes
     }
 }
